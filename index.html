@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+<style>
+#title{
+text-align: center;
+}
+body{
+			color: #000;
+      background-color: black;
+			font-family: 'Nunito Semibold';
+			text-align: center;
+		}
+		#content{
+			display: grid;
+			grid-template-columns: 10% 30% 20% 40%;
+			grid-auto-rows: minmax(auto, auto);
+			max-width: 960px;
+			margin: 0 auto;
+		}
+		#content > *{
+			padding: 10px;
+		}
+		footer{
+			grid-column: span 4;
+			background: #a56dda;
+		}
+    .userItem{
+    grid-column: span 1;
+    background: white;
+    border: black solid 2px;
+    }
+</style>
+</head>
+
+<body>
+<div id="content">
+
+    <div class="userItem">User ID</div>
+    <div class="userItem">Username</div>
+    <div class="userItem">Site Rank</div>
+    <div class="userItem">Date Joined</div>
+		<footer>DevEr0x.com User List</footer>
+</div>
+</body>
+
+</html>
