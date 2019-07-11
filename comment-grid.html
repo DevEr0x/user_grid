@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+<style>
+#title{
+text-align: center;
+}
+body{
+			color: #000;
+      background-color: black;
+			font-family: 'Nunito Semibold';
+			text-align: center;
+		}
+		#comment-grid{
+			display: grid;
+			grid-template-columns:  20% 80%;
+			grid-auto-rows: minmax(auto, auto);
+			max-width: 960px;
+			margin: 0 auto;
+		}
+		#comment-grid > *{
+			padding: 10px;
+		}
+		.footer3{
+			grid-column: span 2;
+			background: #a56dda;
+		}
+    .userItem{
+    grid-column: span 1;
+    background: white;
+    border: black solid 2px;
+    }
+    .nameDate{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    }
+    .comment{
+    text-align: left;
+    margin: 10px;
+    }
+</style>
+</head>
+
+<body>
+<div id="comment-grid">
+
+<div class="userItem">
+<p class="nameDate">Username</p>
+<br>
+<p class="nameDate">The date</p>
+</div>
+<div class="userItem">
+<p class="comment">Comment</p>
+</div>
+    
+    <div class="footer3">End of Comments</div>
+</div>
+</body>
+
+</html>
